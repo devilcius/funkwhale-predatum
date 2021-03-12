@@ -53,7 +53,7 @@ class PredatumScrobbler:
         hashedAuth = hashlib.md5(
             (username + " " + password).encode("utf-8")
         ).hexdigest()           
-        self.token_cache_key = "lastfm:sessionkey:{}".format(hashedAuth)
+        self.token_cache_key = "predatum:sessionkey:{}".format(hashedAuth)
         self.username = username
         self.password = password
         self.setToken()
